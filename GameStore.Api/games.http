@@ -1,7 +1,7 @@
 GET http://localhost:5225/games 
 
 ###
-GET http://localhost:5225/games/4
+GET http://localhost:5225/games/1
 
 ###
 POST http://localhost:5225/games 
@@ -9,9 +9,10 @@ Content-Type: application/json
 
 {
   
-    "genre": "Kids and family",
-    "price": 19.99,
-    "releaseDate": "2011-11-18"
+    "name": "Duna",
+    "genreId": 1,
+    "price": 20.00,
+    "releaseDate": "2014-11-18"
 }
 
 ####
@@ -21,7 +22,7 @@ Content-Type: application/json
 {
     "id": 1,
     "name": "Street Fighter II TUrbo",
-    "genre": "Fighting",
+    "genreId": 2,
     "price": 9.99,
     "releaseDate": "1992-07-15"
 }
