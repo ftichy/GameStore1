@@ -1,3 +1,31 @@
-GET http://localhost:5225
+GET http://localhost:5225/games 
 
+###
+GET http://localhost:5225/games/4
+
+###
+POST http://localhost:5225/games 
+Content-Type: application/json
+
+{
+  
+    "genre": "Kids and family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+####
+PUT http://localhost:5225/games/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Street Fighter II TUrbo",
+    "genre": "Fighting",
+    "price": 9.99,
+    "releaseDate": "1992-07-15"
+}
+
+###
+DELETE http://localhost:5225/games/1
 
